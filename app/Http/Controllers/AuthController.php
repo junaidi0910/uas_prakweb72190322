@@ -41,7 +41,7 @@ class AuthController extends Controller
     {
         if (!Auth::attempt(['nik_user' => $request->nik_user, 'password' => $request-> password]))
         {
-            return redirect('/login');
+            return redirect('/user');
         }
         else
         {
